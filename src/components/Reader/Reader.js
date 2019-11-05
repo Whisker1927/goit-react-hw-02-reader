@@ -41,7 +41,7 @@ export default class Reader extends Component {
           prevDisabled={currentIdx <= 0}
         />
         <Counter currentArticle={currentIdx + 1} allArticles={items.length} />
-        <Publication article={items[currentIdx]} />
+        <Publication article={items[currentIdx]} idx={currentIdx + 1} />
       </div>
     );
   }
